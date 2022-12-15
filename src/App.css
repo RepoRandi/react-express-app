@@ -1,38 +1,82 @@
 .App {
+  margin: 0;
+}
+
+.App ul.menu{
+  list-style: none;
+  padding: 5px 5px 5px 15px;
+  margin: 0;  
+  position: relative;
+  background-color: #efefef;
+  border-bottom: 2px solid #aaa;
+}
+
+.App ul.menu li {
+  display:inline-block;
+  margin: 15px 5px 0 0;
+}
+
+.App ul.menu li a{
+  text-decoration: none;
+  color: #ccc;
+  border: 2px solid #aaa;
+  border-radius: 5px 5px 0 0;
+  padding: 5px;
+  background-color: white;  
+}
+
+.App ul.menu li a:hover{
+  background-color: lightyellow;
+}
+
+.App ul.menu li a.active{
+  text-decoration: none;
+  color: #666;
+  border-bottom: 2px solid #fff;
+}
+
+.App .main{
+  padding: 15px;
+}
+
+.App .main h2{
+  color: #666;
+}
+
+.App .main button{
+  padding: 5px;
+  margin: 5px;
+}
+
+.App .main button:hover{
+  background-color: whitesmoke;
+  cursor: pointer;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th {
+  background-color: #eee;
+}
+
+table, th, td {
+  border: 1px solid #ddd;
+  padding: 5px;
+}
+
+.center{
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+form > label{
+  display: block;
+  margin-top: 10px;
+  font-size: 90%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+form > input, form > select{
+  padding: 5px;
 }
